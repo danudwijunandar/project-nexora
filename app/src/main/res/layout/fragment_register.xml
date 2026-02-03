@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sign_up_scr"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.RegisterFragment">
+    android:clipToOutline="true"
+    android:background="@drawable/sign_up_src">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Auto layout, grids, variables, and unit scale are not yet supported -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/let_s_join_"
+        android:layout_width="222.39dp"
+        android:layout_height="94dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:text="@string/let_s_join_"
+        android:textAppearance="@style/Text_LetsJoin"
+        android:gravity="center_horizontal|top"
+        />
 
-</FrameLayout>
+    <View
+        android:id="@+id/union"
+        android:layout_width="41.82dp"
+        android:layout_height="28.66dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="107.78dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="177.17dp"
+        android:background="@drawable/ic_logo"
+        />
+
+</RelativeLayout>
