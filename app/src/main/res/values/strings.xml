@@ -2,5 +2,11 @@
     <string name="app_name">Nexora</string>
     <string name="welcome_apk">Welcome to</string>
     <string name="let_s_join_">Let\'s join to \n Nexora</string>
+    <string name="email_addre">Firts name</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email_address">Email address</string>
+    <string name="create_password">Create password</string>
+    <string name="sign_up">Sign up</string>
 
 </resources>

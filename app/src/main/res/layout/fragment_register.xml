@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/sign_up_scr"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToOutline="true"
     android:background="@drawable/sign_up_src">
-
-
-    <TextView
-        android:id="@+id/let_s_join_"
-        android:layout_width="222.39dp"
-        android:layout_height="94dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="121dp"
-        android:text="@string/lets_s_join_"
-        android:textAppearance="@style/Text_LetsJoin"
-        android:gravity="center_horizontal|top"
-        />
 
     <View
         android:id="@+id/union"
@@ -39,9 +25,107 @@
         android:layout_marginTop="121dp"
         android:text="@string/let_s_join_"
         android:textAppearance="@style/let_s_join_"
-        android:gravity="center_horizontal|top"
-        />
+        android:gravity="center_horizontal|top" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/let_s_join_"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_rounded"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_rounded"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_address"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_rounded"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_password"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="24dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_rounded"
+                android:paddingHorizontal="12dp"
+                android:inputType="textPassword"
+                android:text="********"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="12dp"
+                android:src="@android:drawable/ic_menu_view"
+                android:alpha="0.5"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/rounded_login"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/already_have_account"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
 
 </RelativeLayout>
