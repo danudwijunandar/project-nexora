@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,29 +5,50 @@
     android:layout_height="match_parent"
     android:padding="24dp">
 
-    <!-- App Logo -->
-    <ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/ic_logo"
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="Logo"/>
+        android:orientation="vertical">
 
-    <!-- Welcome Text -->
-    <TextView
-        android:id="@+id/tvWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Nexora"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/imgLogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_apk"
+            android:layout_gravity="center"
+            android:textAppearance="@style/welcome_to_"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <!-- App Logo -->
+            <View
+                android:id="@+id/union"
+                android:layout_width="41.82dp"
+                android:layout_height="28.66dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/ic_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_gravity="center"
+                android:textAppearance="@style/welcome_to_"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
 
     <!-- Email Input -->
     <com.google.android.material.textfield.TextInputLayout
@@ -37,7 +57,7 @@
         android:layout_height="wrap_content"
         android:hint="Email address"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@id/llTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -86,6 +106,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:text="Forgot password?"
+            android:textColor="?attr/colorPrimary"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"/>
+
     </LinearLayout>
 
     <!-- Login Button -->
@@ -116,7 +146,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Continue with Google"
-        app:icon="@drawable/ic_google"
+        android:icon="@drawable/ic_google"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/tvOr"
         app:layout_constraintStart_toStartOf="parent"
