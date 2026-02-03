@@ -2,6 +2,7 @@
     <string name="app_name">Nexora</string>
     <string name="welcome_apk">Welcome to</string>
     <string name="nexora">Nexora</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lets_s_join_">Let's join to</string>
+    <string name="let_s_join_">Let\u00e2\u0080\u0099s join to \n Nexora</string>
+
 </resources>

@@ -7,7 +7,7 @@
     android:clipToOutline="true"
     android:background="@drawable/sign_up_src">
 
-    <!-- Auto layout, grids, variables, and unit scale are not yet supported -->
+
     <TextView
         android:id="@+id/let_s_join_"
         android:layout_width="222.39dp"
@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="121dp"
-        android:text="@string/let_s_join_"
+        android:text="@string/lets_s_join_"
         android:textAppearance="@style/Text_LetsJoin"
         android:gravity="center_horizontal|top"
         />
@@ -28,7 +28,20 @@
         android:layout_marginLeft="107.78dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="177.17dp"
-        android:background="@drawable/ic_logo"
+        android:background="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/let_s_join_"
+        android:layout_width="222.39dp"
+        android:layout_height="94dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:text="@string/let_s_join_"
+        android:textAppearance="@style/let_s_join_"
+        android:gravity="center_horizontal|top"
         />
+
+
 
 </RelativeLayout>
