@@ -11,7 +11,7 @@
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
     <string name="btn_google_login">Continue with Google</string>
-    <string name="divider">or</string>
+    <string name="divider">OR With</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
     <string name="create_password">Create Password</string>
