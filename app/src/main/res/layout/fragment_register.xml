@@ -23,7 +23,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="121dp"
         android:text="@string/let_s_join_"
-        android:textAppearance="@style/let_s_join_"
         android:gravity="center_horizontal|top" />
 
     <LinearLayout
@@ -111,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:background="@drawable/rounded_login"
-            android:text="@string/btn_signup"
+            android:text="@string/signup"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
