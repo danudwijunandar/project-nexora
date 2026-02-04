@@ -43,7 +43,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="@drawable/ic_rounded"
+            android:background="@drawable/rounded_radius"
             android:paddingHorizontal="12dp"
             android:layout_marginBottom="16dp"
             android:inputType="textPersonName"/>
@@ -58,7 +58,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="@drawable/ic_rounded"
+            android:background="@drawable/rounded_radius"
             android:paddingHorizontal="12dp"
             android:layout_marginBottom="16dp"
             android:inputType="textPersonName"/>
@@ -73,7 +73,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="@drawable/ic_rounded"
+            android:background="@drawable/rounded_radius"
             android:paddingHorizontal="12dp"
             android:layout_marginBottom="16dp"
             android:inputType="textEmailAddress"/>
@@ -92,7 +92,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/ic_rounded"
+                android:background="@drawable/rounded_radius"
                 android:paddingHorizontal="12dp"
                 android:inputType="textPassword"
                 android:text="********"/>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     android:padding="24dp">
 
     <LinearLayout
@@ -127,6 +128,7 @@
         android:layout_height="wrap_content"
         android:text="@string/login"
         android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_radius"
         app:layout_constraintTop_toBottomOf="@id/llOption"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -150,31 +152,51 @@
 
 
     <!-- Google Login -->
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGoogle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/login_with_"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="12dp"
         android:text="@string/btn_google_login"
+        android:textColor="@color/black"
         app:icon="@drawable/ic_google"
-        app:iconTint="@null"
-        app:iconSize="20dp"
         app:iconGravity="textStart"
         app:iconPadding="8dp"
-        android:backgroundTint="@color/white"
-        android:background="@drawable/rounded_login"
-        app:layout_constraintStart_toStartOf="parent"
+        app:iconSize="20dp"
+        app:iconTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/llDivider"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llDivider" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/don_t_have_account"
         app:layout_constraintTop_toBottomOf="@id/btnGoogle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:textAppearance="@style/dont_have_account"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_account"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/dont_have_account"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/sign_up"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
