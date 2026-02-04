@@ -1,7 +1,23 @@
 <resources>
+    <!-- String Resources -->
     <string name="app_name">Nexora</string>
+
+    <!-- Auth Activity -->
     <string name="welcome_apk">Welcome to</string>
     <string name="let_s_join_">Let\'s join to \n Nexora</string>
     <string name="welcome_to_">Welcome to \n     Nexora</string>
+    <string name="i_agree_to_">I agree to the</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="btn_google_login">Continue with Google</string>
+    <string name="divider">or</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="don_t_have_account">Don\'t have an account?</string>
 
 </resources>
